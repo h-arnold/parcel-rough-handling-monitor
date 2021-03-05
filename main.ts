@@ -16,3 +16,7 @@ input.onGesture(Gesture.ThreeG, function () {
 basic.showIcon(IconNames.Happy)
 // Setting maximum volume as we want the sound to be loud
 music.setVolume(127)
+basic.forever(function () {
+    music.playTone(523, music.beat(BeatFraction.Sixteenth))
+    basic.pause(1000)
+})
